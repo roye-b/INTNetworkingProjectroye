@@ -268,7 +268,7 @@ openssl verify -CAfile cert-ca-aws.pem cert.pem
 ```
 
 While `cert-ca-aws.pem` is the CA certificate file (in our case of Amazon Web Services). 
-You can safely download it from: https://exit-zero-academy.github.io/DevOpsTheHardWay/networking_project/cert-ca-aws.pem (`wget`...).
+You can safely download it from: https://exit-zero-academy.github.io/DevOpsTheHardWayAssets/networking_project/cert-ca-aws.pem (`wget`...).
 
 Upon a valid certificate validation, the following output will be printed to stdout:
 ```text
