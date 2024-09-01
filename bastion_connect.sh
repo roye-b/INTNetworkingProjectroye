@@ -1,7 +1,6 @@
 #!/bin/bash
 
 #KEY_PATH=/home/roye/Desktop/roye-key.pem
-
 # Check if KEY_PATH environment variable is set
 if [ -z "$KEY_PATH" ]; then
     echo "KEY_PATH env var is expected"
