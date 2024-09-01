@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export KEY_PATH=/home/roye/Desktop/roye-key.pem
+#KEY_PATH=/home/roye/Desktop/roye-key.pem
 
 # Check if KEY_PATH environment variable is set
 if [ -z "$KEY_PATH" ]; then
@@ -9,7 +9,7 @@ if [ -z "$KEY_PATH" ]; then
 fi
 
 # Check for required arguments
-if [ $# -eq 0 ]; then
+if [ -z "$KEY_PATH" ]; then
     echo "Please provide bastion IP address"
     exit 5
 fi
