@@ -1,6 +1,6 @@
 set -e
 
-export KEY_PATH=/home/ubuntu/roye-key.pem
+export KEY_PATH=$(pwd)/private_key
 OLD_KEYS=$(bash bastion_connect.sh $PUBLIC_IP $PRIVATE_IP "cat ~/.ssh/authorized_keys")
 
 echo "Public keys found in the ~/.ssh/authorized_keys file in your private instance:"
