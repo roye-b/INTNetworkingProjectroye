@@ -7,9 +7,9 @@ if [ -z "$1" ]; then
 fi
 
 PRIVATE_INSTANCE_IP="$1"
-NEW_KEY_NAME="$HOME/.ssh/id_rsa_new"
-NEW_KEY_PATH="$HOME/.ssh/$NEW_KEY_NAME.pub"
-OLD_KEY_PATH="$HOME/.ssh/id_rsa"  # Assuming the old key is named id_rsa
+NEW_KEY_NAME="id_rsa_new"
+NEW_KEY_PATH=".ssh/$NEW_KEY_NAME.pub"
+OLD_KEY_PATH=".ssh/id_rsa"  # Assuming the old key is named id_rsa
 
 # Step 1: Generate a new SSH key pair
 ssh-keygen -t rsa -b 4096  -f "$NEW_KEY_PATH" -N ""
