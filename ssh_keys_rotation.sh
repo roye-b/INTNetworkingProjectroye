@@ -7,7 +7,7 @@ if [ -z "$1" ]; then
 fi
 
 PRIVATE_INSTANCE_IP="$1"
-NEW_KEY_NAME="id_rsa_new"
+NEW_KEY_NAME="id_rsa_new."
 NEW_KEY_PATH=".ssh/$NEW_KEY_NAME.pub"
 OLD_KEY_PATH=".ssh/id_rsa"  # Assuming the old key is named id_rsa
 
